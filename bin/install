@@ -1,6 +1,5 @@
 #!/bin/bash -e
-
-version=${OPENSHIFT_VERTX_VERSION}
+version=${OPENSHIFT_VERTX_VERSION}-milestone4
 
 if [ ! -d "$OPENSHIFT_VERTX_DIR/usr/vert.x-$version" ]; then
   wget http://dl.bintray.com/vertx/downloads/vert.x-$version.tar.gz -O $OPENSHIFT_TMP_DIR/vert.x-$version.tar.gz
