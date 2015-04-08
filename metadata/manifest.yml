@@ -2,7 +2,7 @@ Name: vertx
 Cartridge-Short-Name: VERTX
 Display-Name: Vert.x 3.0.0-milestone4
 Description: ""
-Version: '3.0.0-milestone4'
+Version: '3.0.0'
 License: EPL 1.0
 License-Url: http://www.eclipse.org/legal/epl-v10.html
 Vendor: Eclipse Foundation
