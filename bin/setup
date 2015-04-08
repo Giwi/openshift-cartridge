@@ -5,15 +5,19 @@ case "$1" in
     version="$2"
 esac
 
-#case $version in
-#2.1)
-#  # Add minor version
-#  version=$version.4
-#  ;;
-#*)
-# echo "Unsupported Vert.x version $version" >&2
-#  exit 1
-#esac
+case $version in
+2.1)
+ # Add minor version
+  version=$version.4
+  ;;
+3.0.0)
+  version=$version-milestone4
+   ;;
+*)
+#https://bintray.com/artifact/download/vertx/downloads/vert.x-3.0.0-milestone4.tar.gz
+ echo "Unsupported Vert.x version $version" >&2
+  exit 1
+esac
 
 echo "$version" > $OPENSHIFT_VERTX_DIR/env/OPENSHIFT_VERTX_VERSION
 
